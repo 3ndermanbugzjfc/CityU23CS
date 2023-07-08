@@ -1,3 +1,8 @@
+# 注意 僅網頁備份 非香港城市大學官網 禁止一切非法利用
+# WEB ARCHIVE ONLY!
+# NOT THE OFFICIAL WEBSITE OF THE CITY UNIVERSITY OF HONG KONG!
+# ALL ILLEGAL USES ARE FORBIDDEN!
+
 ## [Q1: 100%](A)
 ```js
 const inp = require('fs').readFileSync(0).toString();
