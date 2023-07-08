@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://hksc.cs.cityu.edu.hk/contest/13/problem/2 -->
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ</title>
+    <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/semantic.min.css" rel="stylesheet">
+    <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/tomorrow.css" rel="stylesheet">
+    <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/math.css" rel="stylesheet">
+    <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/style.css" rel="stylesheet">
+    <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/morris.css" rel="stylesheet">
+    
+      <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/fira-mono.css" rel="stylesheet">
+      <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/lato.css" rel="stylesheet">
+      <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/open-sans.css" rel="stylesheet">
+      <link href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/exo-2.css" rel="stylesheet">
+    
+    <script data-cfasync="false" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/jquery.min.js.下載"></script>
+    
+<script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/editor.main.js.下載"></script><link href="https://ydlunacommon-cdn.nosdn.127.net/0903d3c0bd4ab1a7e5d61c29b459b83b.svg" rel="preload" as="image"><link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/editor.main.css"><link href="https://ydlunacommon-cdn.nosdn.127.net/1fcf50513b6d47e71b13e9388f709b3d.svg" rel="preload" as="image"><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/editor.main.nls.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/monaco-tokenizer.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/c_cpp.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/csharp.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/haskell.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/java.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/javascript.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/pascal.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/python.js.下載"></script><script async="async" type="text/javascript" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/ruby.js.下載"></script><style type="text/css" media="screen" class="monaco-colors">.severity-icon.severity-error { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M8.58318%202.02842C9.96435%202.16331%2011.2561%202.77279%2012.2383%203.75307C13.3643%204.87923%2013.9978%206.40584%2014%207.99829C14.0004%209.38617%2013.5196%2010.7313%2012.6396%2011.8045C11.7595%2012.8778%2010.5345%2013.6127%209.17333%2013.8841C7.81215%2014.1556%206.39895%2013.9467%205.1745%2013.2931C3.95005%2012.6394%202.99008%2011.5815%202.45814%2010.2995C1.92619%209.0175%201.85517%207.59072%202.25717%206.26222C2.65917%204.93373%203.50933%203.7857%204.66282%203.0137C5.8163%202.24171%207.20177%201.89351%208.58318%202.02842ZM8.68038%201.03316C10.292%201.19055%2011.7993%201.90184%2012.9453%203.04585C14.2587%204.35938%2014.9976%206.14013%2015%207.99764C15.0005%209.61695%2014.4396%2011.1864%2013.4129%2012.4385C12.3861%2013.6907%2010.9569%2014.5482%209.36889%2014.8648C7.78084%2015.1815%206.13211%2014.9378%204.70359%2014.1752C3.27506%2013.4127%202.1551%2012.1784%201.53449%2010.6828C0.913887%209.18708%200.831027%207.52251%201.30003%205.97259C1.76903%204.42268%202.76089%203.08331%204.10662%202.18265C5.45236%201.28199%207.06873%200.875761%208.68038%201.03316ZM5.52498%205L8.00004%207.47506L10.4751%205L11.1822%205.70711L8.70714%208.18217L11.1818%2010.6569L10.4747%2011.364L8.00004%208.88927L5.52535%2011.364L4.81824%2010.6569L7.29293%208.18217L4.81787%205.70711L5.52498%205Z%22%20fill%3D%22%23a1260d%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.severity-icon.severity-warning { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M14.12%2013.9725L15%2012.5L9.37927%202H7.61924L1.9985%2012.5L2.87852%2013.9725H14.12ZM2.87852%2012.9725L8.49925%202.47249L14.12%2012.9725H2.87852ZM7.98952%206H8.98802V10H7.98952V6ZM7.98952%2011H8.98802V12H7.98952V11Z%22%20fill%3D%22%23ddb100%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.severity-icon.severity-info { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3%207.5C3%204.46243%205.46243%202%208.5%202C11.5376%202%2014%204.46243%2014%207.5C14%2010.5376%2011.5376%2013%208.5%2013C5.46243%2013%203%2010.5376%203%207.5ZM2%207.5C2%203.91015%204.91015%201%208.5%201C12.0899%201%2015%203.91015%2015%207.5C15%2011.0899%2012.0899%2014%208.5%2014C4.91015%2014%202%2011.0899%202%207.5ZM8%204V5H9V4H8ZM8%206L8%2010H9L9%206H8Z%22%20fill%3D%22%23007acc%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.severity-icon.severity-ignore { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3%207.5C3%204.46243%205.46243%202%208.5%202C11.5376%202%2014%204.46243%2014%207.5C14%2010.5376%2011.5376%2013%208.5%2013C5.46243%2013%203%2010.5376%203%207.5ZM2%207.5C2%203.91015%204.91015%201%208.5%201C12.0899%201%2015%203.91015%2015%207.5C15%2011.0899%2012.0899%2014%208.5%2014C4.91015%2014%202%2011.0899%202%207.5ZM8%204V5H9V4H8ZM8%206L8%2010H9L9%206H8Z%22%20fill%3D%22%2375beff%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.monaco-editor .minimap-slider, .monaco-editor .minimap-slider .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.2); }
+.monaco-editor .minimap-slider:hover, .monaco-editor .minimap-slider:hover .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.35); }
+.monaco-editor .minimap-slider.active, .monaco-editor .minimap-slider.active .minimap-slider-horizontal { background: rgba(0, 0, 0, 0.3); }
+.monaco-editor .minimap-shadow-visible { box-shadow: #dddddd -6px 0 6px -6px inset; }
+.monaco-editor .scroll-decoration { box-shadow: #dddddd 0 6px 6px -6px inset; }
+.monaco-editor .focused .selected-text { background-color: #add6ff; }
+.monaco-editor .selected-text { background-color: #e5ebf1; }
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input { background-color: #fffffe; }
+.monaco-editor, .monaco-editor .inputarea.ime-input { color: #000000; }
+.monaco-editor .margin { background-color: #fffffe; }
+.monaco-editor .rangeHighlight { background-color: rgba(253, 255, 0, 0.2); }
+.vs-whitespace { color: rgba(51, 51, 51, 0.2) !important; }
+.monaco-editor .view-overlays .current-line { border: 2px solid #eeeeee; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #eeeeee; }
+.monaco-editor .lines-content .cigr { box-shadow: 1px 0 0 0 #d3d3d3 inset; }
+.monaco-editor .lines-content .cigra { box-shadow: 1px 0 0 0 #939393 inset; }
+.monaco-editor .line-numbers { color: #237893; }
+.monaco-editor .current-line ~ .line-numbers { color: #0b216f; }
+.monaco-editor .view-ruler { box-shadow: 1px 0 0 0 #d3d3d3 inset; }
+.monaco-editor .cursor { background-color: #000000; border-color: #000000; color: #ffffff; }
+.monaco-editor.vs .valueSetReplacement { outline: solid 2px #b9b9b9; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23e51400'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23e9a700'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%2375beff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22%236c6c6c%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.showUnused .monaco-editor .squiggly-inline-unnecessary { opacity: 0.467; }
+.monaco-editor .squiggly-inline-deprecated { text-decoration: line-through; text-decoration-color: #000000}
+.monaco-diff-editor .diff-review-line-number { color: #237893; }
+.monaco-diff-editor .diff-review-shadow { box-shadow: #dddddd 0 -6px 6px -6px inset; }
+.monaco-editor .line-insert, .monaco-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-diff-editor .line-insert, .monaco-diff-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .inline-added-margin-view-zone { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .line-delete, .monaco-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor .line-delete, .monaco-diff-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-editor .inline-deleted-margin-view-zone { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor.side-by-side .editor.modified { box-shadow: -6px 0 5px -5px #dddddd; }
+.monaco-editor .bracket-match { background-color: rgba(0, 100, 0, 0.1); }
+.monaco-editor .bracket-match { border: 1px solid #b9b9b9; }
+.monaco-editor .codelens-decoration { color: #999999; }
+.monaco-editor .codelens-decoration > a:hover { color: #0000ff !important; }
+.monaco-editor .findOptionsWidget { background-color: #f3f3f3; }
+.monaco-editor .findOptionsWidget { box-shadow: 0 2px 8px #a8a8a8; }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #a8ac94; }
+.monaco-editor .findScope { background-color: rgba(180, 180, 180, 0.3); }
+.monaco-editor .find-widget { background-color: #f3f3f3; }
+.monaco-editor .find-widget { box-shadow: 0 2px 8px #a8a8a8; }
+.monaco-editor .find-widget { color: #616161; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #a1260d; }
+.monaco-editor .find-widget .monaco-sash { background-color: #c8c8c8; width: 3px !important; margin-left: -4px;}
+.monaco-editor .find-widget .monaco-checkbox .checkbox:checked + .label { border: 1px solid rgba(0, 122, 204, 0); }
+.monaco-editor .find-widget .monaco-checkbox .checkbox:checked + .label { background-color: rgba(0, 122, 204, 0.12); }
+.monaco-workbench .monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: rgba(0, 122, 204, 0.4); }
+.monaco-editor .detected-link-active { color: #0000ff !important; }
+.monaco-editor .monaco-editor-overlaymessage .anchor { border-top-color: #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { border: 1px solid #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { background-color: #d6ecf2; }
+.monaco-editor .parameter-hints-widget { border: 1px solid #c8c8c8; }
+.monaco-editor .parameter-hints-widget.multiple .body { border-left: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .parameter-hints-widget .signature.has-docs { border-bottom: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .parameter-hints-widget { background-color: #f3f3f3; }
+.monaco-editor .parameter-hints-widget a { color: #006ab1; }
+.monaco-editor .parameter-hints-widget code { background-color: rgba(220, 220, 220, 0.4); }
+.monaco-editor .suggest-widget .monaco-list .monaco-list-row .monaco-highlighted-label .highlight { color: #0066bf; }
+.monaco-editor .suggest-widget { color: #000000; }
+.monaco-editor .suggest-widget a { color: #006ab1; }
+.monaco-editor .suggest-widget code { background-color: rgba(220, 220, 220, 0.4); }
+.monaco-editor .focused .selectionHighlight { background-color: rgba(173, 214, 255, 0.3); }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor .wordHighlight { background-color: rgba(87, 87, 87, 0.25); }
+.monaco-editor .wordHighlightStrong { background-color: rgba(14, 99, 156, 0.25); }
+.monaco-editor .accessibilityHelpWidget { background-color: #f3f3f3; }
+.monaco-editor .accessibilityHelpWidget { color: #616161; }
+.monaco-editor .accessibilityHelpWidget { box-shadow: 0 2px 8px #a8a8a8; }
+.monaco-editor .tokens-inspect-widget { border: 1px solid #c8c8c8; }
+.monaco-editor .tokens-inspect-widget .tokens-inspect-separator { background-color: #c8c8c8; }
+.monaco-editor .tokens-inspect-widget { background-color: #f3f3f3; }
+.monaco-editor .reference-zone-widget .ref-tree .referenceMatch .highlight { background-color: rgba(234, 92, 0, 0.3); }
+.monaco-editor .reference-zone-widget .preview .reference-decoration { background-color: rgba(245, 216, 2, 0.87); }
+.monaco-editor .reference-zone-widget .ref-tree { background-color: #f3f3f3; }
+.monaco-editor .reference-zone-widget .ref-tree { color: #646465; }
+.monaco-editor .reference-zone-widget .ref-tree .reference-file { color: #1e1e1e; }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-list:focus .monaco-list-rows > .monaco-list-row.selected:not(.highlighted) { background-color: rgba(51, 153, 255, 0.2); }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-list:focus .monaco-list-rows > .monaco-list-row.selected:not(.highlighted) { color: #6c6c6c !important; }
+.monaco-editor .reference-zone-widget .preview .monaco-editor .monaco-editor-background,.monaco-editor .reference-zone-widget .preview .monaco-editor .inputarea.ime-input {	background-color: #f2f8fc;}
+.monaco-editor .reference-zone-widget .preview .monaco-editor .margin {	background-color: #f2f8fc;}
+.monaco-editor .goto-definition-link { color: #0000ff !important; }
+.monaco-editor .marker-widget a { color: #006ab1; }
+.monaco-editor .hoverHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor .monaco-editor-hover { background-color: #f3f3f3; }
+.monaco-editor .monaco-editor-hover { border: 1px solid #c8c8c8; }
+.monaco-editor .monaco-editor-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-editor-hover hr { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-editor-hover hr { border-bottom: 0px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-editor-hover a { color: #006ab1; }
+.monaco-editor .monaco-editor-hover .hover-row .actions { background-color: #e7e7e7; }
+.monaco-editor .monaco-editor-hover code { background-color: rgba(220, 220, 220, 0.4); }
+.monaco-editor .snippet-placeholder { background-color: rgba(10, 50, 100, 0.2); outline-color: transparent; }
+.monaco-editor .finish-snippet-placeholder { background-color: transparent; outline-color: rgba(10, 50, 100, 0.5); }
+
+.mtk1 { color: #000000; }
+.mtk2 { color: #fffffe; }
+.mtk3 { color: #808080; }
+.mtk4 { color: #ff0000; }
+.mtk5 { color: #0451a5; }
+.mtk6 { color: #0000ff; }
+.mtk7 { color: #09885a; }
+.mtk8 { color: #008000; }
+.mtk9 { color: #dd0000; }
+.mtk10 { color: #383838; }
+.mtk11 { color: #cd3131; }
+.mtk12 { color: #863b00; }
+.mtk13 { color: #af00db; }
+.mtk14 { color: #800000; }
+.mtk15 { color: #e00000; }
+.mtk16 { color: #3030c0; }
+.mtk17 { color: #666666; }
+.mtk18 { color: #778899; }
+.mtk19 { color: #ff00ff; }
+.mtk20 { color: #a31515; }
+.mtk21 { color: #4f76ac; }
+.mtk22 { color: #008080; }
+.mtk23 { color: #001188; }
+.mtk24 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }</style></head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; " data-new-gr-c-s-check-loaded="14.1114.0" data-gr-ext-installed="">
+    <div class="ui fixed borderless menu" style="position: fixed; height: 49px; ">
+        <div class="ui container">
+            
+            <a class="header item" href="http://hksc.cs.cityu.edu.hk/"><img src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/CS_Logo_Eng_RGB.jpg" style="width: 150px; height: 48px; "></a>
+            
+            <a class="item" href="http://hksc.cs.cityu.edu.hk/"><i class="home icon"></i> Home</a>
+            <a class="item" href="http://hksc.cs.cityu.edu.hk/problems"><i class="list icon"></i> Problem set</a>
+            <a class="item active" href="http://hksc.cs.cityu.edu.hk/contests"><i class="calendar icon"></i> Contests</a>
+            <a class="item" href="http://hksc.cs.cityu.edu.hk/submissions"><i class="tasks icon"></i> Submissions</a>
+            <a class="item" href="http://hksc.cs.cityu.edu.hk/ranklist"><i class="signal icon"></i> Rank list</a>
+            <a class="item" href="http://hksc.cs.cityu.edu.hk/discussion/global"><i class="comments icon"></i> Discussions</a>
+            <!--
+            <a class="item" href="/help"><i class="help circle icon"></i> Help</a>
+            -->
+            
+              <a id="back_to_contest" class="item" href="http://hksc.cs.cityu.edu.hk/contest/13"><i class="arrow left icon"></i> Back to the contest</a>
+            
+            <div class="right menu">
+              
+              <a href="http://hksc.cs.cityu.edu.hk/user/249" style="color: inherit; ">
+              </a><div class="ui simple dropdown item"><a href="http://hksc.cs.cityu.edu.hk/user/249" style="color: inherit; ">
+                HKSC2023-247 <i class="dropdown icon"></i>
+                </a><div class="menu"><a href="http://hksc.cs.cityu.edu.hk/user/249" style="color: inherit; ">
+                  </a><a class="item" href="http://hksc.cs.cityu.edu.hk/user/249/edit"><i class="edit icon"></i>Modify the profile</a>
+                  
+                  <a class="item" href-post="/logout?url=%2Fcontest%2F13%2Fproblem%2F2"><i class="power icon"></i>Log out</a>
+                </div>
+              </div>
+              
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 28px; ">
+    <div class="ui main container">
+
+<style>
+#languages-menu::-webkit-scrollbar, #testcase-menu::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#languages-menu .item::after, #testcase-menu .item::after {
+    display: none;
+}
+</style>
+
+<script>
+  window.pathLib = "/cdnjs/";
+  window.pathSelfLib = "/self/";
+  
+  var originalConsoleWarn = console.warn;
+  console.warn = function (message) {
+    if (message.startsWith('Duplicate definition of module')) return;
+    originalConsoleWarn.apply(console, arguments);
+  };
+</script>
+
+<!-- Load monaco-editor -->
+<script src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/loader.js.下載"></script>
+<script src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/monaco-editor.js.下載"></script>
+<link rel="stylesheet" href="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/monaco-editor.css">
+
+
+
+
+<div class="ui center aligned grid">
+    <div class="row">
+      <h1 class="ui header">
+        
+          B. Zodiac Signs
+        
+      </h1>
+    </div>
+    
+      <div class="row" style="margin-top: -15px">
+          <span class="ui label">Memory limit: 256 MiB</span>
+          <span class="ui label">Time limit: 1000 ms</span>
+          
+            <span class="ui label">Input file: stdin</span>
+            <span class="ui label">Output file: stdout</span>
+          
+      </div>
+    
+    
+      <div class="row" style="margin-top: -23px">
+          <span class="ui label">Problem type: traditional</span>
+          <span class="ui label">Judging mode: text compare</span>
+      </div>
+    
+    
+</div>
+<div class="ui grid">
+  <div class="row">
+    <div class="column">
+      <div class="ui buttons">
+        
+          
+            <a class="small ui primary button" href="http://hksc.cs.cityu.edu.hk/problem/53">Back to the problem set</a>
+          
+          <a class="small ui positive button" href="http://hksc.cs.cityu.edu.hk/contest/13/submissions?problem_id=2">Submission record</a>
+          
+          <a href="http://hksc.cs.cityu.edu.hk/contest/13" class="ui orange button">Back to the contest</a>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <h4 class="ui top attached block header">Description</h4>
+      <div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p>愛麗絲有 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.064ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 888.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+<title id="MathJax-SVG-2-Title">N</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E2-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E2-MJMATHI-4E" x="0" y="0"></use>
+</g>
+</svg></span> 個朋友。</p>
+<p>由於她喜歡十二星座，她想知道她的朋友中有多少人屬於每個星座。</p>
+<p>下面是 12 個星座對應的日期：</p>
+<ul>
+<li>Aries(白羊座): 3月21日 - 4月19日</li>
+<li>Taurus(金牛座): 4月20日 - 5月20日</li>
+<li>Gemini(雙子座): 5月21日 - 6月21日</li>
+<li>Cancer(巨蟹座): 6月22日 - 7月22日</li>
+<li>Leo(獅子座): 7月23日 - 8月22日</li>
+<li>Virgo(處女座): 8月23日 - 9月22日</li>
+<li>Libra(天秤座): 9月23日 - 10月23日</li>
+<li>Scorpio(天蠍座): 10月24日 - 11月21日</li>
+<li>Sagittarius(射手座): 11月22日 - 12月21日</li>
+<li>Capricorn(摩羯座): 12月22日 - 1月19日</li>
+<li>Aquarius(水瓶座): 1月20日 - 2月18日</li>
+<li>Pisces(雙魚座): 2月19日 - 3月20日</li>
+</ul>
+<p>愛麗絲給了你一份她朋友的生日名單，並請你幫忙。對於 12 個星座中的每一個，輸出該星座的名字和屬於該星座的朋友的數量。</p>
+<hr>
+<p>Alice has <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.064ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 888.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-3-Title">
+<title id="MathJax-SVG-3-Title">N</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E3-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E3-MJMATHI-4E" x="0" y="0"></use>
+</g>
+</svg></span> friends.</p>
+<p>Since she loves zodiac signs, she would like to know how many of her friends belong to each sign.</p>
+<p>Here are the dates corresponding to the 12 zodiac signs:</p>
+<ul>
+<li>Aries: Mar 21 - Apr 19</li>
+<li>Taurus: Apr 20 - May 20</li>
+<li>Gemini: May 21 - Jun 21</li>
+<li>Cancer: Jun 22 - Jul 22</li>
+<li>Leo: Jul 23 - Aug 22</li>
+<li>Virgo: Aug 23 - Sep 22</li>
+<li>Libra: Sep 23 - Oct 23</li>
+<li>Scorpio: Oct 24 - Nov 21</li>
+<li>Sagittarius: Nov 22 - Dec 21</li>
+<li>Capricorn: Dec 22 - Jan 19</li>
+<li>Aquarius: Jan 20 - Feb 18</li>
+<li>Pisces: Feb 19 - Mar 20</li>
+</ul>
+<p>Alice gives you the list of her friends' birthdays and asks you for help. For each of the 12 signs, output the name and the number of friends that belong to the sign.</p>
+</div></div>
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="column">
+        <h4 class="ui top attached block header">Input</h4>
+        <div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p>第一行包含一個整數 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.064ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 888.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+<title id="MathJax-SVG-2-Title">N</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E2-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E2-MJMATHI-4E" x="0" y="0"></use>
+</g>
+</svg></span>。</p>
+<p>接下來的 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.064ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 888.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-3-Title">
+<title id="MathJax-SVG-3-Title">N</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E3-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E3-MJMATHI-4E" x="0" y="0"></use>
+</g>
+</svg></span> 行各包含一個字符串，代表朋友的生日。它必定包含代表月份的 3 個字符，一個空格，以及代表日子的 2 個數字，依次排列。更多細節請參考樣例。</p>
+<p>代表月份的 3 個字符必定是下列之一：
+<code>Jan</code>、<code>Feb</code>、<code>Mar</code>、<code>Apr</code>、<code>May</code>、<code>Jun</code>、<code>Jul</code>、<code>Aug</code>、<code>Sep</code>、<code>Oct</code>、<code>Nov</code>、<code>Dec</code>。</p>
+<p>你可以假設所有給定的日期都是有效的，即現實中 366 種可能性中的一種。</p>
+<hr>
+<p>The first line contains one integer <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.064ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 888.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-4-Title">
+<title id="MathJax-SVG-4-Title">N</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E4-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E4-MJMATHI-4E" x="0" y="0"></use>
+</g>
+</svg></span>.</p>
+<p>The following <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.064ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 888.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-5-Title">
+<title id="MathJax-SVG-5-Title">N</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E5-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E5-MJMATHI-4E" x="0" y="0"></use>
+</g>
+</svg></span> lines each contains one string that represents the birthday of a friend. It must contain 3 characters representing the month, a space, and 2 digits representing the day, in order. Please refer to the samples for more details.</p>
+<p>The 3 characters representing the month must be one of the following:
+<code>Jan</code>、<code>Feb</code>、<code>Mar</code>、<code>Apr</code>、<code>May</code>、<code>Jun</code>、<code>Jul</code>、<code>Aug</code>、<code>Sep</code>、<code>Oct</code>、<code>Nov</code>、<code>Dec</code>.</p>
+<p>You may assume that all the given dates are valid, i.e. one of the 366 possibilities in reality.</p>
+</div></div>
+    </div>
+  </div>
+  
+  
+    <div class="row">
+        <div class="column">
+          <h4 class="ui top attached block header">Output</h4>
+          <div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p>按照題目陳述和樣例中給出的順序，對於 12 個星座中的每一個，輸出該星座的名字和屬於該星座的朋友的數量。</p>
+<hr>
+<p>In the order given in the statement and samples, for each of the 12 zodiac signs, output the name and the number of friend belong to the sign.</p>
+</div></div>
+        </div>
+    </div>
+  
+  
+    <div class="row">
+        <div class="column">
+          <h4 class="ui top attached block header">Sample</h4>
+          <div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><h3>Sample input</h3>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>3
+Mar 08
+Aug 07
+Feb 29
+</code></pre></div>
+<h3>Sample output</h3>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code><span class="pl-n">Aries</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Taurus</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Gemini</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Cancer</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Leo</span><span class="pl-o">:</span> <span class="pl-mi">1</span>
+<span class="pl-n">Virgo</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Libra</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Scorpio</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Sagittarius</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Capricorn</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Aquarius</span><span class="pl-o">:</span> <span class="pl-mi">0</span>
+<span class="pl-n">Pisces</span><span class="pl-o">:</span> <span class="pl-mi">2</span>
+</code></pre></div>
+</div></div>
+        </div>
+    </div>
+  
+  
+    <div class="row">
+        <div class="column">
+          <h4 class="ui top attached block header">Constraint and hint</h4>
+          <div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p>對於全部測試數據，滿足 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.073ex" height="2.343ex" style="vertical-align: -0.505ex;" viewBox="0 -791.3 6059.1 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+<title id="MathJax-SVG-2-Title">1 \leq N \leq 1000</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E2-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E2-MJMAIN-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path>
+<path stroke-width="1" id="E2-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E2-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E2-MJMAIN-31" x="0" y="0"></use>
+ <use xlink:href="#E2-MJMAIN-2264" x="778" y="0"></use>
+ <use xlink:href="#E2-MJMATHI-4E" x="1834" y="0"></use>
+ <use xlink:href="#E2-MJMAIN-2264" x="3000" y="0"></use>
+<g transform="translate(4057,0)">
+ <use xlink:href="#E2-MJMAIN-31"></use>
+ <use xlink:href="#E2-MJMAIN-30" x="500" y="0"></use>
+ <use xlink:href="#E2-MJMAIN-30" x="1001" y="0"></use>
+ <use xlink:href="#E2-MJMAIN-30" x="1501" y="0"></use>
+</g>
+</g>
+</svg></span>。</p>
+<table class="ui structured celled table">
+<thead>
+<tr>
+<th style="text-align:center;">子任務</th>
+<th style="text-align:center;">分數</th>
+<th style="text-align:center;">附加限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-3-Title">
+<title id="MathJax-SVG-3-Title">1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E3-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E3-MJMAIN-31" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-4-Title">
+<title id="MathJax-SVG-4-Title">8</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E4-MJMAIN-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E4-MJMAIN-38" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2723.1 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-5-Title">
+<title id="MathJax-SVG-5-Title">N = 1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E5-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E5-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E5-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E5-MJMATHI-4E" x="0" y="0"></use>
+ <use xlink:href="#E5-MJMAIN-3D" x="1166" y="0"></use>
+ <use xlink:href="#E5-MJMAIN-31" x="2222" y="0"></use>
+</g>
+</svg></span>, 日子 = <code>01</code>, 月份 = <code>Apr</code> 或 <code>May</code></td>
+</tr>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-6-Title">
+<title id="MathJax-SVG-6-Title">2</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E6-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E6-MJMAIN-32" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1001 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-7-Title">
+<title id="MathJax-SVG-7-Title">14</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E7-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E7-MJMAIN-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E7-MJMAIN-31"></use>
+ <use xlink:href="#E7-MJMAIN-34" x="500" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2723.1 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-8-Title">
+<title id="MathJax-SVG-8-Title">N = 1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E8-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E8-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E8-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E8-MJMATHI-4E" x="0" y="0"></use>
+ <use xlink:href="#E8-MJMAIN-3D" x="1166" y="0"></use>
+ <use xlink:href="#E8-MJMAIN-31" x="2222" y="0"></use>
+</g>
+</svg></span>, 日子 = <code>01</code></td>
+</tr>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-9-Title">
+<title id="MathJax-SVG-9-Title">3</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E9-MJMAIN-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E9-MJMAIN-33" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1001 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-10-Title">
+<title id="MathJax-SVG-10-Title">21</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E10-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+<path stroke-width="1" id="E10-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E10-MJMAIN-32"></use>
+ <use xlink:href="#E10-MJMAIN-31" x="500" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2723.1 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-11-Title">
+<title id="MathJax-SVG-11-Title">N = 1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E11-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E11-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E11-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E11-MJMATHI-4E" x="0" y="0"></use>
+ <use xlink:href="#E11-MJMAIN-3D" x="1166" y="0"></use>
+ <use xlink:href="#E11-MJMAIN-31" x="2222" y="0"></use>
+</g>
+</svg></span></td>
+</tr>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-12-Title">
+<title id="MathJax-SVG-12-Title">4</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E12-MJMAIN-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E12-MJMAIN-34" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1001 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-13-Title">
+<title id="MathJax-SVG-13-Title">57</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E13-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path>
+<path stroke-width="1" id="E13-MJMAIN-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E13-MJMAIN-35"></use>
+ <use xlink:href="#E13-MJMAIN-37" x="500" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;">無附加限制</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>For all test data, <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.073ex" height="2.343ex" style="vertical-align: -0.505ex;" viewBox="0 -791.3 6059.1 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-14-Title">
+<title id="MathJax-SVG-14-Title">1 \leq N \leq 1000</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E14-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E14-MJMAIN-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path>
+<path stroke-width="1" id="E14-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E14-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E14-MJMAIN-31" x="0" y="0"></use>
+ <use xlink:href="#E14-MJMAIN-2264" x="778" y="0"></use>
+ <use xlink:href="#E14-MJMATHI-4E" x="1834" y="0"></use>
+ <use xlink:href="#E14-MJMAIN-2264" x="3000" y="0"></use>
+<g transform="translate(4057,0)">
+ <use xlink:href="#E14-MJMAIN-31"></use>
+ <use xlink:href="#E14-MJMAIN-30" x="500" y="0"></use>
+ <use xlink:href="#E14-MJMAIN-30" x="1001" y="0"></use>
+ <use xlink:href="#E14-MJMAIN-30" x="1501" y="0"></use>
+</g>
+</g>
+</svg></span>.</p>
+<table class="ui structured celled table">
+<thead>
+<tr>
+<th style="text-align:center;">Subtask</th>
+<th style="text-align:center;">Score</th>
+<th style="text-align:center;">Additional Constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-15-Title">
+<title id="MathJax-SVG-15-Title">1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E15-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E15-MJMAIN-31" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-16-Title">
+<title id="MathJax-SVG-16-Title">8</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E16-MJMAIN-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E16-MJMAIN-38" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2723.1 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-17-Title">
+<title id="MathJax-SVG-17-Title">N = 1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E17-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E17-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E17-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E17-MJMATHI-4E" x="0" y="0"></use>
+ <use xlink:href="#E17-MJMAIN-3D" x="1166" y="0"></use>
+ <use xlink:href="#E17-MJMAIN-31" x="2222" y="0"></use>
+</g>
+</svg></span>, day = <code>01</code>, month = <code>Apr</code> or <code>May</code></td>
+</tr>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-18-Title">
+<title id="MathJax-SVG-18-Title">2</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E18-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E18-MJMAIN-32" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1001 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-19-Title">
+<title id="MathJax-SVG-19-Title">14</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E19-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E19-MJMAIN-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E19-MJMAIN-31"></use>
+ <use xlink:href="#E19-MJMAIN-34" x="500" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2723.1 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-20-Title">
+<title id="MathJax-SVG-20-Title">N = 1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E20-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E20-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E20-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E20-MJMATHI-4E" x="0" y="0"></use>
+ <use xlink:href="#E20-MJMAIN-3D" x="1166" y="0"></use>
+ <use xlink:href="#E20-MJMAIN-31" x="2222" y="0"></use>
+</g>
+</svg></span>, day = <code>01</code></td>
+</tr>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-21-Title">
+<title id="MathJax-SVG-21-Title">3</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E21-MJMAIN-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E21-MJMAIN-33" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1001 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-22-Title">
+<title id="MathJax-SVG-22-Title">21</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E22-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+<path stroke-width="1" id="E22-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E22-MJMAIN-32"></use>
+ <use xlink:href="#E22-MJMAIN-31" x="500" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2723.1 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-23-Title">
+<title id="MathJax-SVG-23-Title">N = 1</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E23-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path>
+<path stroke-width="1" id="E23-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E23-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E23-MJMATHI-4E" x="0" y="0"></use>
+ <use xlink:href="#E23-MJMAIN-3D" x="1166" y="0"></use>
+ <use xlink:href="#E23-MJMAIN-31" x="2222" y="0"></use>
+</g>
+</svg></span></td>
+</tr>
+<tr>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-24-Title">
+<title id="MathJax-SVG-24-Title">4</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E24-MJMAIN-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E24-MJMAIN-34" x="0" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;"><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.325ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1001 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-25-Title">
+<title id="MathJax-SVG-25-Title">57</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E25-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path>
+<path stroke-width="1" id="E25-MJMAIN-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E25-MJMAIN-35"></use>
+ <use xlink:href="#E25-MJMAIN-37" x="500" y="0"></use>
+</g>
+</svg></span></td>
+<td style="text-align:center;">No additional constraints</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+        </div>
+    </div>
+  
+  
+    
+    
+    
+</div>
+
+
+<script type="text/javascript">
+  var editor;
+  window.onEditorLoaded(function () {
+    var editorElement = document.getElementById('editor');
+    var content = '';
+    content = "function getZodiacSign(date) {\r\n    const month = date.getMonth() + 1; \u002F\u002F getMonth() returns 0-based month (0=January), so add 1\r\n    const day = date.getDate();\r\n\r\n    if ((month == 3 && day \u003E= 21) || (month == 4 && day \u003C= 19)) {\r\n        return 'Aries';\r\n    } else if ((month == 4 && day \u003E= 20) || (month == 5 && day \u003C= 20)) {\r\n        return 'Taurus';\r\n    } else if ((month == 5 && day \u003E= 21) || (month == 6 && day \u003C= 21)) {\r\n        return 'Gemini';\r\n    } else if ((month == 6 && day \u003E= 22) || (month == 7 && day \u003C= 22)) {\r\n        return 'Cancer';\r\n    } else if ((month == 7 && day \u003E= 23) || (month == 8 && day \u003C= 22)) {\r\n        return 'Leo';\r\n    } else if ((month == 8 && day \u003E= 23) || (month == 9 && day \u003C= 22)) {\r\n        return 'Virgo';\r\n    } else if ((month == 9 && day \u003E= 23) || (month == 10 && day \u003C= 23)) {\r\n        return 'Libra';\r\n    } else if ((month == 10 && day \u003E= 24) || (month == 11 && day \u003C= 21)) {\r\n        return 'Scorpio';\r\n    } else if ((month == 11 && day \u003E= 22) || (month == 12 && day \u003C= 21)) {\r\n        return 'Sagittarius';\r\n    } else if ((month == 12 && day \u003E= 22) || (month == 1 && day \u003C= 19)) {\r\n        return 'Capricorn';\r\n    } else if ((month == 1 && day \u003E= 20) || (month == 2 && day \u003C= 18)) {\r\n        return 'Aquarius';\r\n    } else {\r\n        return 'Pisces';\r\n    }\r\n}\r\n\r\nconst inp = require('fs').readFileSync(0).toString();\r\nlines = inp.split(\u002F\\r?\\n\u002F);\r\nlines.pop();\r\nlines.shift();\r\nlet dates = lines.reduce((reduce, line, k, a) =\u003E {\r\n\tlet date = new Date(line);\r\n\tlet z = getZodiacSign(date);\r\n\tif (z in reduce) reduce[z]++;\r\n\r\n\treturn reduce;\r\n}, {\r\n        'Aries': 0,\r\n        'Taurus': 0,\r\n        'Gemini': 0,\r\n        'Cancer': 0,\r\n        'Leo': 0,\r\n        'Virgo': 0,\r\n        'Libra': 0,\r\n        'Scorpio': 0,\r\n        'Sagittarius': 0,\r\n        'Capricorn': 0,\r\n        'Aquarius': 0,\r\n        'Pisces': 0\r\n    });\r\n\r\nlet output = '';\r\nfor (const zodiacSign in dates) {\r\n    output += `${zodiacSign}: ${dates[zodiacSign]}\\n`;\r\n}\r\nconsole.log(output.trim());";
+    editor = window.createCodeEditor(editorElement, $('#languages-menu .item.active').data('mode'), content);
+    window.editor = editor;
+  });
+
+  var lastSubmitted = '';
+
+  function submit_code() {
+    if (!$('#submit_code input[name=answer]').val().trim() && !editor.getValue().trim()) return false;
+    $('#submit_code input[name=language]').val($('#languages-menu .item.active').data('value'));
+    lastSubmitted = editor.getValue();
+    $('#submit_code input[name=code]').val(editor.getValue());
+    return true;
+  }
+
+  $('#languages-menu')[0].scrollTop = $('#languages-menu .active')[0].offsetTop - $('#languages-menu')[0].firstElementChild.offsetTop;
+
+  $(function () {
+    $('#languages-menu .item').click(function() {
+      $(this)
+        .addClass('active')
+        .closest('.ui.menu')
+        .find('.item')
+          .not($(this))
+          .removeClass('active')
+      ;
+      monaco.editor.setModelLanguage(editor.getModel(), $(this).data('mode'));
+    });
+  });
+</script>
+
+
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+        <span style="color: #999;">HKSCOJ Powered by <a href="https://github.com/syzoj/syzoj" target="_blank">SYZOJ</a>.</span>
+        <br>
+        <span style="color: #999;">Sponsored by <a href="https://www.cs.cityu.edu.hk/" target="blank">Department of Computer Science, City University of Hong Kong</a>.</span>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/semantic.min.js.下載"></script>
+<script src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/Chart.bundle.min.js.下載"></script>
+<script src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/script.js.下載"></script>
+
+
+
+<div id="volume-booster-visusalizer">
+                <div class="sound">
+                    <div class="sound-icon"></div>
+                    <div class="sound-wave sound-wave_one"></div>
+                    <div class="sound-wave sound-wave_two"></div>
+                    <div class="sound-wave sound-wave_three"></div>
+                </div>
+                <div class="segments-box">
+                    <div data-range="1-20" class="segment"><span></span></div>
+                    <div data-range="21-40" class="segment"><span></span></div>
+                    <div data-range="41-60" class="segment"><span></span></div>
+                    <div data-range="61-80" class="segment"><span></span></div>
+                    <div data-range="81-100" class="segment"><span></span></div>
+                </div>
+            </div><div id="joinContentApp" data-v-app=""><div data-v-4d05e61c="" class="youdao_translator__popup-thumb_conatiner" id="popupThumbId" style="display: none;"><img data-v-4d05e61c="" class="youdao_translator__icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUrSURBVHgB7Vs9bFtVFD7n+qVqlQxhCd2ahDC2dTdatZEjgRSFoUWCpQxQVWVqREekgpIKqrLRqEwglDI0EoIhLNRDUaxSqd3iFDYQ8ZiyYKRCqe13T885z++lsZzGce+1bL9+UnTtZ+c+n+/8H72L0CIolxuu7YUsoT1skLJEMAyIo7oyEGEUOgi+b6l+3zK/KfNasoRFJLM2kC8UWt0Hd/rCo+ncaAbtBTTwHtSF7XowKUi0nLHVS5i/V3r2V7eBanzQzrHQF6C3MT/w0+1L233YlADVurEr/OEo9AFYjlLGVqaaWYNpvFCZOZbtJ+EFxLKEZs9K5Y1j2cbPtlhAv2m+Ec0sYYsF9LPwgtgSJL7F1xICqjOTc/0sfAwhobaPg3sd6gJi+oGx65AiBLYyJq6gFsB5fh5Shiru0fSuFlB9c/Lvnily3KEc/GfGTHU6l0uh8AIu7WtZE2KYhZQiRMwaBEwtAQHCYWOADkBKEVp8yXA/mUb/V7D5HzBcGKSWAJ4hDAfQIeDBLOChI7rCyH7Al/frdfr3IcCffwDJ391fgH4tQieBXAITeIQIbN49EwneAujBBtilRaBbeegEvBJgPpgFc/Lt6A1r2t66CXS/GGn8r43o+uAQ4PgE4NHjYF47AVC3DMsE2BuLAPH3PMEPASxU5pPLidZFEPvjD0rCjj/o9WnInD6jRIg1hB996JUELwRkPl+IhGcBap9dVI3vCix8cGVhk4TZsy2R1w4MOEbi7yK8aG+3wgvkf1loCYwSLMWafMEtAfxjzen39aVq/nlMlzUeyh68agZh1/ABpwQY8V0ADXZtab4RYv5fXduyt2u4I0C0X9eSvXEdXEHSYewKrabS3cAZAUnEF+07jtpSIAmMBzdwRoA5ekJXH5Wc/bleFB08Aq7hzgVGogLGie834kFkUXH57BLuCODiR/HQT76mmIQRtyQ4rwN6De4JGBoCH0i6R8cB1h0B63XfH5sA5xiP9iQP8cUZAXR/NdrwkPtcjQkBv4NrOCPA1vt3lHQ46NYN4iqQ7t4B13DnAlyzaw3AwiczAAeQHkD9n7MA3etmAiDq+3VT6QjHHcQCba4i7YdLi+ADTgkQC7DL30cbf3x5szhqBzJU4T1E+zJF8jUic54G7ddfKhHax/NgpC0S6v+rViQd4RdXwBe8FELhpxeTDi5Y/E5dolXoSOzaN4kLhc87V9jpfl6HoufOgzn1jr6WUlYsg2QwKvk8HnHFQ1EZmXPwxDiDyOf8WoejHi3A+1hcipjMuVkWsMX6QExexuJMVsCWoCQsXU8CrGv4JyC+kWhZUtrYq4CvTGzWCpI+N9g6flvVPP90Oy0zBo0jDJkO+2i1O0ZAu5AZo8YQJqp2/qzzeND13aCav6RASYt1a3CJnmiHrQxGOTbs+GBzG8DKzOR6Gh6PawZ5cPLFQIRZKENKQQRltgAqQWpBZWMJ/4GUQk6ZGALq7CMZXYQawZrJUHoJENlNsDcoyhkbSB/KA/k7BYPLhTJHw28hZUCgZVm1DgituQopg5wok1UJ2JcvlHhxX2h3L5LjdEl5Tadyw9XHdrXTByA7DSQoBTdvj8Xvk1JYYkFIZio+kdmPEOEzVJl6+tqWXkBdAWtv9SMJIrxl2RrPDm5/cBLtSr+4Q6z5Zgcnn9li87Ronpc56GUQLASPzDwWCk1rnVYPT8+zNZyE3nmyXGubAapcbfvwdDNUp4/nCE18fH5Uzhp0xfF57milrY+Oz9u14P+guJ3GG/EEqXYwm2lMSKkAAAAASUVORK5CYII="></div><div data-v-da6ffe62="" class="youdao_translator_popup-card_container youdao_translator_bg_main" id="popupCardId" style="display: none;"><!----><div data-v-da6ffe62="" class="youdao_translator_popup-card_main"><div data-v-da6ffe62="" class="youdao_translator_search__popup"><div data-v-f8ef2368="" data-v-da6ffe62="" class="youdao_translator_input-container" input="" style="--710c54ea: auto; --6b521f08: 220px; --51c156dc: 22px; --b88d384a: 8px; --f644a9bc: #939599;"><input data-v-f8ef2368="" class="youdao_translator_popcard_input youdao_translator_bg_main" id="searchInput" placeholder="请输入要翻译的内容" maxlength="500" show-word-limit="false" autocomplete="off"><div data-v-f8ef2368="" class="youdao_translator_suffix"><!----><div data-v-f8ef2368="" class="youdao_translator_input-options"><div data-v-f8ef2368="" class="youdao_translator_search_input__count youdao_translator_color_text_3" style="display: none;">0 / 500</div><div data-v-f8ef2368="" class="youdao_translator_search_input__clear" style="display: none;"><img data-v-f8ef2368="" class="youdao_translator_search_input__clear__icon" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/cd386aa8b1162ba18e2e416d0d5cb185.svg"></div><div data-v-f8ef2368="" class="youdao_translator_search_input__search"><img data-v-f8ef2368="" class="youdao_translator_search_input__search__icon" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/c3537c6c57e37ac3f5511d5df34a24fb.svg"></div></div></div></div></div><div data-v-da6ffe62="" class="youdao_translator_popup-card_divider youdao_translator_color_bg_5"></div></div><div data-v-72bcdb49="" class="youdao_translator__result-container"><div data-v-72bcdb49="" class="youdao_translator__result-cell"><!----><!----><div data-v-582010bd="" data-v-72bcdb49="" class="content"><img data-v-582010bd="" class="img no-input" src="./B. Zodiac Signs - 全港中學編程挑戰賽 - 初賽 HKSC - heat event - 比赛 - HKSCOJ_files/4d2316e879f82970a7653ade60880e40.svg"><div data-v-582010bd="" class="tips youdao_translator_color_text_1">无输入内容</div></div></div></div><!----></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
