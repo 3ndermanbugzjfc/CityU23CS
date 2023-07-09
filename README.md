@@ -138,3 +138,5 @@ for (let i=1; i <= parseInt(inp, 10); i++) {
 }
 console.log(sum);
 ```
+# [Q5](E)
+# [Q6](F)
