@@ -3,15 +3,17 @@
 # NOT THE OFFICIAL WEBSITE OF THE CITY UNIVERSITY OF HONG KONG!
 # ALL ILLEGAL USES ARE FORBIDDEN!
 
-<details>
-    <summary><h1>點擊查看天書（作者： HKSC2023-072）</h1></summary>
-    <p><li><a href="xueba/A">Q1: 100%</a>
-    <p><li><a href="xueba/B">Q2: 100%</a>
-    <p><li><a href="xueba/C">Q3: 100%</a>
-    <p><li><a href="xueba/D">Q4: 100%</a>
-    <p><li><a href="xueba/E">Q5: 59%</a>
-    <p><li><a href="xueba/F">Q6: 50%</a>
-</details>
+<p>
+    <details>
+        <summary><h1>點擊查看天書（作者： HKSC2023-072）</h1></summary>
+        <li><a href="xueba/A">Q1: 100%</a>
+        <li><a href="xueba/B">Q2: 100%</a>
+        <li><a href="xueba/C">Q3: 100%</a>
+        <li><a href="xueba/D">Q4: 100%</a>
+        <li><a href="xueba/E">Q5: 59%</a>
+        <li><a href="xueba/F">Q6: 50%</a>
+    </details>
+</p>
 
 
 ## [Q1: 100%](A)
