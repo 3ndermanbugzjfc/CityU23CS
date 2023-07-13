@@ -4,13 +4,13 @@
 # ALL ILLEGAL USES ARE FORBIDDEN!
 
 <details>
-    <summary><h1>點擊查看天書</h1></summary>
-    - [Q1](xueba/A)
-    - [Q2](xueba/B)
-    - [Q3](xueba/C)
-    - [Q4](xueba/D)
-    - Q5
-    - Q6
+    <summary><h1>點擊查看天書（作者： HKSC2023-072）</h1></summary>
+    - [Q1: 100%](xueba/A)
+    - [Q2: 100%](xueba/B)
+    - [Q3: 100%](xueba/C)
+    - [Q4: 100%](xueba/D)
+    - [Q5: 59%](xueba/E)
+    - [Q6: 50%](xueba/F)
 </details>
 
 ## [Q1: 100%](A)
