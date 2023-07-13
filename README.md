@@ -5,12 +5,14 @@
 
 <details>
     <summary><h1>點擊查看天書（作者： HKSC2023-072）</h1></summary>
-    <li><a href="xueba/A">Q1: 100%</a></li>
-    <li><a href="xueba/B">Q2: 100%</a></li>
-    <li><a href="xueba/C">Q3: 100%</a></li>
-    <li><a href="xueba/D">Q4: 100%</a></li>
-    <li><a href="xueba/E">Q5: 59%</a></li>
-    <li><a href="xueba/F">Q6: 50%</a></li>
+    <ul>
+        <li><a href="xueba/A">Q1: 100%</a></li>
+        <li><a href="xueba/B">Q2: 100%</a></li>
+        <li><a href="xueba/C">Q3: 100%</a></li>
+        <li><a href="xueba/D">Q4: 100%</a></li>
+        <li><a href="xueba/E">Q5: 59%</a></li>
+        <li><a href="xueba/F">Q6: 50%</a></li>
+    </ul>
 </details>
 
 
@@ -23,8 +25,8 @@ const inputi = parseInt(input, 10);
 let comb = (input.length) * 9;
 
 for (let i=1; i<=9; i++) {
-	let illegal = parseInt(i.toString().repeat(input.length), 10);
-	if (illegal > inputi) comb--;
+    let illegal = parseInt(i.toString().repeat(input.length), 10);
+    if (illegal > inputi) comb--;
 }
 
 console.log(comb);
@@ -70,11 +72,11 @@ lines = inp.split(/\r?\n/);
 lines.pop();
 lines.shift();
 let dates = lines.reduce((reduce, line, k, a) => {
-	let date = new Date(line);
-	let z = getZodiacSign(date);
-	if (z in reduce) reduce[z]++;
+    let date = new Date(line);
+    let z = getZodiacSign(date);
+    if (z in reduce) reduce[z]++;
 
-	return reduce;
+    return reduce;
 }, {
         'Aries': 0,
         'Taurus': 0,
@@ -127,26 +129,26 @@ console.log(sum % (10**9+7));
 ```js
 let cache = {};
 function steps(n, stepped) {
-	if (n in cache) return cache[n];
-	if (n === 1) {
-		return stepped;
-	}
+    if (n in cache) return cache[n];
+    if (n === 1) {
+        return stepped;
+    }
 
-	if (n % 2 === 0) n = n / 2;
-	else n = 3 * n + 1;
-	cache[n] = steps(n, stepped + 1);
-	return cache[n];
+    if (n % 2 === 0) n = n / 2;
+    else n = 3 * n + 1;
+    cache[n] = steps(n, stepped + 1);
+    return cache[n];
 }
 
 let inp = require('fs').readFileSync(0).toString().trim();
 
 let sum = 0;
 for (let i=1; i <= parseInt(inp, 10); i++) {
-	// if (i in cache) sum += cache[i];
-	// else {
-		
-		sum += steps(i, 0);
-	// }
+    // if (i in cache) sum += cache[i];
+    // else {
+        
+        sum += steps(i, 0);
+    // }
 }
 console.log(sum);
 ```
