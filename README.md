@@ -3,7 +3,18 @@
 # NOT THE OFFICIAL WEBSITE OF THE CITY UNIVERSITY OF HONG KONG!
 # ALL ILLEGAL USES ARE FORBIDDEN!
 
+<details>
+    <summary><h1>點擊查看天書</h1></summary>
+    - [Q1](xueba/A)
+    - [Q2](xueba/B)
+    - [Q3](xueba/C)
+    - [Q4](xueba/D)
+    - Q5
+    - Q6
+</details>
+
 ## [Q1: 100%](A)
+
 ```js
 const inp = require('fs').readFileSync(0).toString();
 const input = inp.trim();
